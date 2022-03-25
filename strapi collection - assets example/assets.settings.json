@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "assets",
+  "info": {
+    "name": "Assets",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "asset_id": {
+      "type": "string"
+    },
+    "playback_id": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "upload_id": {
+      "type": "string",
+      "default": "No-Id"
+    }
+  }
+}

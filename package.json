@@ -1,0 +1,20 @@
+{
+  "name": "mst",
+  "version": "1.0.0",
+  "description": "Mux Strapi Test",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "Edwin Mejia",
+  "license": "ISC",
+  "dependencies": {
+    "@mux/mux-node": "^3.3.1",
+    "axios": "^0.24.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "path": "^0.12.7"
+  }
+}

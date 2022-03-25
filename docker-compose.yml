@@ -1,0 +1,24 @@
+version: '3'
+
+services:
+  web:
+    image: edwinmejia19/mst_web:first
+    build: .
+    ports:
+      - '8080:8080'
+    secrets:
+      - env
+  
+  strapi:
+    image: strapi/strapi
+    volumes:
+      - strapi-data:/srv/app
+    ports:
+      - '1337:1337'
+
+volumes:
+  strapi-data:
+
+secrets:
+  env:
+    file: .env
